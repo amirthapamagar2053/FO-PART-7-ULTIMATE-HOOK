@@ -23,7 +23,7 @@ const useResource = (baseUrl) => {
 
   const create = (resource) => {
     ultimateService
-      .create(resource, baseUrl)
+      .create(baseUrl, resource)
       .then((response) => setResources([...resources, response]));
   };
 

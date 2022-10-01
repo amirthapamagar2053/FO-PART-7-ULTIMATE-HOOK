@@ -13,7 +13,7 @@ const getAll = async (baseUrl) => {
   return response.data
 }
 
-const create = async (newObject,baseUrl) => {
+const create = async (baseUrl,newObject) => {
   const config = {
     headers: { Authorization: token },
   }
